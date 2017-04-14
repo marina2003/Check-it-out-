@@ -38,6 +38,7 @@ print("Please Wait While We Process Your Information...")
 check_Digit = int(cardNumber) // 10
 check_Digit = int(str(check_Digit)[::-1])
 print(check_Digit)
+                           
 
 # Customers - Loyalty Card Details Message
 print("Thank You, Below You Will Find Your Customers Details: ")
@@ -51,3 +52,4 @@ time.sleep( 1 )
 print("Your Card Expiry Date Is: ", cardExpiry)
 time.sleep( 1 )
 print("Thank You For Using Our Loyalty Cards! GoodBye")
+
