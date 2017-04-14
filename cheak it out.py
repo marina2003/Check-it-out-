@@ -11,4 +11,9 @@ print("Welcome to loyalty card: Please follow the instructions provided")
 cardNumber = input("Please enter your loyalty card 8 digit number: ")
 #CardExpiry = input("Please enter your cards expiry date: ")
 
+# Testing Inputs
+# print('Cusomer Deatils', full_name, postcode, cardNumber)
 
+# Card Validation
+while len(cardNumber) != 9:
+    cardNumber = input('That was not a 8 digit number. Please enter your 8 cards digit number: ')
