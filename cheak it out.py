@@ -15,5 +15,11 @@ cardNumber = input("Please enter your loyalty card 8 digit number: ")
 # print('Cusomer Deatils', full_name, postcode, cardNumber)
 
 # Card Validation
-while len(cardNumber) != 9:
+while len(cardNumber) != 8:
     cardNumber = input('That was not a 8 digit number. Please enter your 8 cards digit number: ')
+    break
+
+# Digit Functions
+check_Digit = int(cardNumber) // 10
+print(check_Digit)
+
