@@ -14,3 +14,7 @@ Python 3.1.2
 - [x]	Reversing digits in 'check_digit'
 - [ ] Output whether the loyalty card is valid or not
 - [x] Output the customers and loyalty card details.
+
+# If you would like to contact me send me an email or vist my webiste
+website: davidbrockway.com
+email: david.brockway@davidbrockway.com
