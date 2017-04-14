@@ -21,5 +21,6 @@ while len(cardNumber) != 8:
 
 # Digit Functions
 check_Digit = int(cardNumber) // 10
+check_Digit = int(str(check_Digit)[::-1])
 print(check_Digit)
 
