@@ -8,19 +8,23 @@ import time
 # Welcome message 
 print("Welcome to Illuminate Jewelers")
 while True:
-    user = input("Would you like to cheack if your loyalty card is valid? (yes/no): ")
+    user = input("Would You Like To Check If Your Loyalty Card Is Valid? (yes/no): ")
     if user == 'yes':
         break
-        print("Please wait while we process your request...")
+        print("Please Wait While We Process Your Request...")
     else:
         print("Exiting Program")
         exit(0)
 time.sleep( 5 )
 # User Inputs
-fullName = input("Please Enter Your Name: ")
-postCode = input("Please Enter Your Postcode?")  
-cardNumber = input("Please enter your loyalty card 8 digit number: ")
-cardExpiry = input("Please enter your cards expiry date: ")
+fullName = input("Please Enter Your Full Name: ")
+time.sleep( 1 )
+postCode = input("Please Enter Your Postcode?")
+time.sleep( 1 )
+print("Just Some More Details We Need To Process Your Request...")
+time.sleep( 1 )
+cardNumber = input("Please Enter Your Loyalty Card 8 Digit Card Number: ")
+cardExpiry = input("Please Enter Your Cards Expiry Date: ")
 
 # Date Validation
 
@@ -39,8 +43,12 @@ print(check_Digit)
 print("Thank you, below you will find your customers details: ")
 time.sleep( 2 )
 print("Your FullName Is: ", fullName)
+time.sleep( 1 )
 print("Your Postcode Is: ", postCode)
+time.sleep( 1 )
 print("Your CardNumber Is: ", cardNumber)
+time.sleep( 1 )
 print("Your Card Expiry Date Is: ", cardExpiry)
-print("Thank-You for using our loyalty cards!")
+time.sleep( 1 )
+print("Thank You For Using Our Loyalty Cards! GoodBye")
 
