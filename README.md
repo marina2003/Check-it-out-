@@ -12,6 +12,8 @@ Python 3.1.2
 - [x] Allowing the user to enter the 8 digits shown on the front of the card 
 - [x] Remove the 8th digit and storing it as ‘check_digit’
 - [x]	Reversing digits in 'check_digit'
+- [x]	Odd Digit Function * odd digits by 2
+- [x]	 Digit Function If Greated Than 9 Then -9
 - [ ] Output whether the loyalty card is valid or not
 - [x] Output the customers and loyalty card details.
 
