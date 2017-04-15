@@ -50,7 +50,6 @@ string_number = ''.join(map(str, number_list))
 # Digit Reverse Functions
 reversed_number = int(string_number[::-1] )
 print(reversed_number)
-time.sleep( 2 )
 
 # Digit Call Function
 Digits = reversed_number
@@ -66,21 +65,16 @@ for digit in str(Digits):
 # Odd Digit Multiply Functions
   if digit % 2 == 1:
     digit = digit * 2
-    print(digit)
 # Digit Function If Greated Than 9 Then -9
   if digit > 9:
     digit = digit - 9
-    print(digit)
-# Digit Function Adds Up All Digits
-total = sum(list(map(int, Digits)))
-print(total)
-
+    
 # Customers - Loyalty Card Details Message
 print("Thank You, Below You Will Find Your Customers Details: ")
 time.sleep( 2 )
 print("Your FullName Is: ", fullName)
 time.sleep( 1 )
-print("Your Postcode Is: ", postCode)
+print("Your Postcode Is: ", postcode)
 time.sleep( 1 )
 print("Your CardNumber Is: ", cardNumber)
 time.sleep( 1 )
