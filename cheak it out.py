@@ -6,7 +6,7 @@
 import time
 
 # Welcome message 
-print("Welcome to Illuminate Jewelers") 
+print("Welcome to Illuminate Jewelers Loyalty Card System")  
 while True:
     user = input("Would You Like To Check If Your Loyalty Card Is Valid? (yes/no): ")
     if user == 'yes':
