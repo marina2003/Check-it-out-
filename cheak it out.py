@@ -5,8 +5,8 @@
 # Python Import
 import time
 
-# Welcome message 
-print("Welcome to Illuminate Jewelers Loyalty Card System")  
+# Welcome Message
+print("Welcome to Illuminate Jewelers Loyalty Card System") 
 while True:
     user = input("Would You Like To Check If Your Loyalty Card Is Valid? (yes/no): ")
     if user == 'yes':
@@ -23,52 +23,67 @@ time.sleep( 0 )
 #time.sleep( 1 )
 #print("Just Some More Details Before We Can Process Your Request...")
 #time.sleep( 1 )
-cardNumber = input("Please Enter Your Loyalty Card Eight Digit Card Number: ")
+cardExpiry = input("Please enter your cards expiry date: ")
+#time.sleep ( 1 )
+cardNumber = input("Please enter your loyalty card eight digit number: ")
 
 # CardExpiry Date Validation
+print (time.strftime("%d/%m/%Y"))# Gets Current date
+currentDate = (time.strftime("%d/%m/%Y"))
+
+yearExpiry = cardExpiry[6:10]
+monthExpiry = cardExpiry[3:5]
+dayExpiry = cardExpiry[0:2]
+
+NewcardExpiry = yearExpiry + "/" + monthExpiry + "/" + dayExpiry
 
 # Card Validation
 while len(cardNumber) != 8:
-  cardNumber = input('Invalid Not An Eight Digit Number. Please Enter Your Cards Eight digit number: ')
+  cardNumber = input('Invalid not an eight digit number. Please enter your cards eight digit number: ')
   break
-print("Please Wait While We Process Your Information...")
+print("Please wait while we process your information...")
 
 # Digit Conversation
-number_list = list(map(int, cardNumber))
+numberList = list(map(int, cardNumber))
 
 # Store Eight Digit
-check_Digit = number_list[7] #grab the 8th item
-print(check_Digit)
-#check_Digit = list(map(int, cardNumber))[7]
+checkDigit = numberList[7] #grab the 8th item
+print(checkDigit)
+checkDigit = list(map(int, cardNumber))[7]
 
 # Digit Function Removes Eight Digit
-del(number_list[7])
+del(numberList[7])
 
 # Digit conversation list to string
-string_number = ''.join(map(str, number_list))
+stringNumber = ''.join(map(str, numberList))
 
 # Digit Reverse Functions
-reversed_number = int(string_number[::-1] )
-print(reversed_number)
+reversedNumber = int(stringNumber[::-1] )
+print(reversedNumber)
 
 # Digit Call Function
-Digits = reversed_number
+digits = reversedNumber
 # Digit Extraction Functions
-Digit1 = int(str(Digits)[0])
-Digit3 = int(str(Digits)[2])
-Digit5 = int(str(Digits)[4])
-Digit7 = int(str(Digits)[6])
+digit1 = int(str(digits)[0])
+digit3 = int(str(digits)[2])
+digit5 = int(str(digits)[4])
+digit7 = int(str(digits)[6])
 # Loop over all digits
-for digit in str(Digits):
+for digit in str(digits):
 # Convert current digit to an integer
   digit = int(digit)
 # Odd Digit Multiply Functions
   if digit % 2 == 1:
     digit = digit * 2
-# Digit Function If Greated Than 9 Then -9
+    print(digit)
+# Digit Function If Greater Than 9 Then -9
   if digit > 9:
     digit = digit - 9
-    
+    print(digit)
+
+total_digits = Digit1 + Digit3 + Digit5 + Digit7 + Digit
+print(total_digits)
+
 # Customers - Loyalty Card Details Message
 print("Thank You, Below You Will Find Your Customers Details: ")
 time.sleep( 2 )
@@ -81,4 +96,3 @@ time.sleep( 1 )
 print("Your Card Expiry Date Is: ", cardExpiry)
 time.sleep( 1 )
 print("Thank You For Using Our Loyalty Cards! GoodBye")
-
