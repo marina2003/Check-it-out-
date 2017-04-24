@@ -37,6 +37,10 @@ dayExpiry = cardExpiry[0:2]
 
 NewcardExpiry = yearExpiry + "/" + monthExpiry + "/" + dayExpiry
 
+if NewcardExpiry < currentDate:
+    print("card has expired")
+
+
 # Card Validation
 while len(cardNumber) != 8:
   cardNumber = input('Invalid not an eight digit number. Please enter your cards eight digit number: ')
@@ -81,7 +85,7 @@ for digit in str(digits):
     digit = digit - 9
     print(digit)
 
-total_digits = Digit1 + Digit3 + Digit5 + Digit7 + Digit
+total_digits = digit1 + digit3 + digit5 + digit7 + digit
 print(total_digits)
 
 # Customers - Loyalty Card Details Message
@@ -96,3 +100,4 @@ time.sleep( 1 )
 print("Your Card Expiry Date Is: ", cardExpiry)
 time.sleep( 1 )
 print("Thank You For Using Our Loyalty Cards! GoodBye")
+
