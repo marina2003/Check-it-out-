@@ -21,5 +21,5 @@ Python 3.1.2
 - [x] Output the customers and loyalty card details.
 
 # If you would like to contact me send me an email or vist my webiste
-website: davidbrockway.com
+website: http://davidbrockway.com
 email: david.brockway@davidbrockway.com
