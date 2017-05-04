@@ -16,7 +16,7 @@ Python 3.1.2
 - [x]	 Digit Function If Greated Than 9 Then -9
 - [ ] Adds up all seven digits and check_digit 
 - [ ] Checksif the sum of the added digits plus the ‘check_digit’  is divisible by 10
-- [ ] PostCode Validation 
+- [x] PostCode Validation 
 - [ ] Output whether the loyalty card is valid or not
 - [x] Output the customers and loyalty card details.
 
