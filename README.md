@@ -14,8 +14,8 @@ Python 3.1.2
 - [x]	Reversing digits in 'check_digit'
 - [x]	Odd Digit Function * odd digits by 2
 - [x]	 Digit Function If Greated Than 9 Then -9
-- [ ] Adds up all seven digits and check_digit 
-- [ ] Checksif the sum of the added digits plus the ‘check_digit’  is divisible by 10
+- [x] Adds up all seven digits and check_digit 
+- [x] Checksif the sum of the added digits plus the ‘check_digit’  is divisible by 10
 - [x] PostCode Validation 
 - [x] Output whether the loyalty card is valid or not
 - [x] Output the customers and loyalty card details.
